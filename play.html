@@ -186,7 +186,7 @@ div#gameport {
       '.BufferWindow .Style_alert { color: ' + g.headerFg + ' !important; }\n' +
       '.BufferWindow .Input,\n' +
       '.BufferWindow textarea.Input { color: ' + g.inputFg + ' !important; caret-color: ' + g.inputFg + '; font-family: ' + g.monoFamily + ' !important; }\n' +
-      '.GridWindow { color: ' + g.gridFg + ' !important; background-color: ' + g.gridBg + ' !important; font-family: ' + g.monoFamily + ' !important; font-size: ' + g.gridSize + ' !important; line-height: ' + g.gridLineHeight + ' !important; padding: 4px 12px !important; border: none !important; border-radius: 0 !important; box-shadow: none !important; margin: 0 !important; width: 100% !important; box-sizing: border-box !important; }\n' +
+      '.GridWindow { color: ' + g.gridFg + ' !important; background-color: ' + g.gridBg + ' !important; padding: 4px 12px !important; border: none !important; border-radius: 0 !important; box-shadow: none !important; margin: 0 !important; width: 100% !important; box-sizing: border-box !important; }\n' +
       '.GridWindow span { color: ' + g.gridFg + ' !important; background-color: ' + g.gridBg + ' !important; }\n' +
       '.GridWindow span.reverse { color: ' + g.gridFg + ' !important; background-color: ' + g.gridBg + ' !important; }\n' +
       '#loadingpane { color: ' + g.bufferFg + '; background: ' + g.bodyBg + '; font-family: ' + g.monoFamily + '; }\n' +
@@ -215,6 +215,18 @@ div#gameport {
       removePlatformTheme();
     }
   });
+
+  // Auto-apply theme from URL param (full-page mode from hub)
+  var urlTheme = new URLSearchParams(window.location.search).get('theme');
+  if (urlTheme && urlTheme !== 'classic') {
+    var s = document.createElement('script');
+    s.src = '/ifhub/themes.js';
+    s.onload = function() {
+      var t = getTheme(urlTheme);
+      if (t) applyPlatformTheme(t.game, t.scrollbar);
+    };
+    document.head.appendChild(s);
+  }
 })();
 </script>
 
