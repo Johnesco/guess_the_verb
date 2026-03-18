@@ -1,0 +1,91 @@
+# Auto-generated walkthrough guide
+
+# +1 points
+# You lift the corner of the doormat and find an iron key hidden underneath.
+> look under mat
+# Pick up the iron key
+> take iron key
+# Unlock the door
+# You unlock the front door.
+> unlock door with iron key
+# You open the front door.
+> open door
+
+## Hallway
+
+> east
+
+# +1 points
+# You rummage through the coat pockets and find a matchbook.
+> search overcoat
+
+## Study
+
+> east
+
+# Open the desk
+# You open the heavy desk, revealing a winding key.
+> open desk
+# +1 points
+> take winding key
+# You slide the painting aside, revealing a small wall safe set into the wall.
+> push painting
+# +1 points
+# You strike a match and hold it to the logs. They catch quickly, filling the
+#   room with flickering warmth.
+> burn fireplace
+# In the firelight you can make out numbers scratched into the stone: 7-3-9.
+> examine hearthstone
+# +1 points
+# You dial 7-3-9. The safe clicks open.
+> open safe
+# Pick up the spring
+> take spring
+
+## Hallway
+
+> west
+
+## Kitchen
+
+> south
+
+## Garden
+
+> south
+
+# Pick up the trowel
+> take trowel
+# +1 points
+# You dig into the soft earth and uncover a small brass mechanism wrapped in
+#   oilcloth. It's the innards of a music box.
+> dig flower bed
+# Pick up the mechanism
+> take mechanism
+
+## Kitchen
+
+> north
+
+## Hallway
+
+> north
+
+## Attic
+
+> up
+
+# Store the mechanism in the music box
+# You put the mechanism into the old music box.
+> put mechanism in music box
+# Store the spring in the music box
+# You put the clock spring into the old music box.
+> put spring in music box
+# +2 points
+# You insert the butterfly key into the keyhole and wind the music box. The
+#   gears catch and a delicate melody fills the attic.
+> wind music box
+# GAME WON
+# You lift the locket from the trunk. Inside, your grandmother smiles back at
+#   you from a faded photograph. This is what she wanted you to have.
+> take locket

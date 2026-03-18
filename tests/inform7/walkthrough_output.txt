@@ -1,0 +1,152 @@
+
+
+
+
+Guess the Verb
+A Parser Puzzle Laboratory by John Googol
+Release 1 / Serial number 260317 / Inform 7 v10.1.2 / D
+Your grandmother's letter said she left something for you in this old house.
+
+Type HELP if you get stuck, or VERBS for a list of commands.
+
+Front Porch
+A sagging wooden porch wraps around the front of the house. A woven doormat lies before the front door. A tarnished brass doorbell is set beside the frame.
+
+The front door leads inside to the east.
+
+You can see a front door here.
+
+>You lift the corner of the doormat and find an iron key hidden underneath.
+
+[Your score has just gone up by one point.]
+
+>Taken.
+
+>You unlock the front door.
+
+>You open the front door.
+
+>
+Hallway
+A dim hallway with faded wallpaper and creaking floorboards. A coat rack stands by the door with an old overcoat hanging from it.
+
+Doors lead east to a study and south to the kitchen. A narrow staircase leads up.
+
+You can see a front door here.
+
+>You rummage through the coat pockets and find a matchbook.
+
+[Your score has just gone up by one point.]
+
+>
+Study
+A wood-paneled study with built-in bookshelves. A heavy desk sits in the center, its drawers shut. An oil painting of a woman hangs on the far wall. A stone fireplace squats in the corner, cold and dark.
+
+The hallway is back to the west.
+
+You can see a heavy desk (closed) here.
+
+>You open the heavy desk, revealing a winding key.
+
+>[Your score has just gone up by one point.]
+
+>You slide the painting aside, revealing a small wall safe set into the wall.
+
+>You strike a match and hold it to the logs. They catch quickly, filling the room with flickering warmth.
+
+In the glow, you notice numbers scratched into the hearthstone: 7-3-9.
+
+[Your score has just gone up by one point.]
+
+>In the firelight you can make out numbers scratched into the stone: 7-3-9.
+
+>You dial 7-3-9. The safe clicks open.
+
+[Your score has just gone up by one point.]
+
+>Taken.
+
+>
+Hallway
+A dim hallway with faded wallpaper and creaking floorboards. A coat rack stands by the door with an old overcoat hanging from it.
+
+Doors lead east to a study and south to the kitchen. A narrow staircase leads up.
+
+You can see a front door here.
+
+>
+Kitchen
+A rustic kitchen with stone counters and a deep ceramic sink. Copper pots hang from hooks above. A handwritten recipe card sits on the counter.
+
+The hallway is north. A doorway leads south to the garden.
+
+>
+Garden
+An overgrown garden behind the house. A flower bed runs along the back wall, thick with weeds. A small shed leans in one corner with its door ajar. A rusty trowel leans against the shed.
+
+The kitchen doorway is back to the north.
+
+You can see a garden trowel here.
+
+>Taken.
+
+>You dig into the soft earth and uncover a small brass mechanism wrapped in oilcloth. It's the innards of a music box.
+
+[Your score has just gone up by one point.]
+
+>Taken.
+
+>
+Kitchen
+A rustic kitchen with stone counters and a deep ceramic sink. Copper pots hang from hooks above. A handwritten recipe card sits on the counter.
+
+The hallway is north. A doorway leads south to the garden.
+
+>
+Hallway
+A dim hallway with faded wallpaper and creaking floorboards. A coat rack stands by the door with an old overcoat hanging from it.
+
+Doors lead east to a study and south to the kitchen. A narrow staircase leads up.
+
+You can see a front door here.
+
+>
+Attic
+A cramped attic under sloping eaves, thick with dust. A dusty shelf holds an old music box. A heavy steamer trunk sits against the wall.
+
+The stairs lead back down.
+
+On the dusty shelf is an old music box (empty).
+
+You can also see a steamer trunk (closed) here.
+
+>You put the mechanism into the old music box.
+
+>You put the clock spring into the old music box.
+
+>You insert the butterfly key into the keyhole and wind the music box. The gears catch and a delicate melody fills the attic.
+
+As the tune plays, you hear a click from the steamer trunk -- its mechanical lock releases and the lid swings open.
+
+[Your score has just gone up by two points.]
+
+>You lift the locket from the trunk. Inside, your grandmother smiles back at you from a faded photograph. This is what she wanted you to have.
+
+
+
+You found your grandmother's heirloom. The locket feels warm against your palm.
+
+
+
+    *** You have won ***
+
+
+In that game you scored 10 out of a possible 10, in 27 turns, earning you the rank of Heir.
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+> Please give one of the answers above.
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+> 
+<end of input>
