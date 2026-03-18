@@ -145,8 +145,5 @@ In that game you scored 10 out of a possible 10, in 27 turns, earning you the ra
 
 
 Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
-> Please give one of the answers above.
-
-Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
 > 
 <end of input>
