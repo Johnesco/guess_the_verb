@@ -504,7 +504,7 @@ var currentView = 'commands';
 var replayPlaying = false;
 var replayStep = -1;  // -1 = preamble, 0..N-1 = steps
 var replayTimer = null;
-var replaySpeed = parseFloat(localStorage.getItem('guess_the_verb-replay-speed') || '1');
+var replaySpeed = parseFloat(localStorage.getItem('guess-the-verb-inform7-replay-speed') || '1');
 var replayPhase = 'idle'; // 'idle' | 'typing' | 'response' | 'pause'
 var replayTypingIndex = 0;
 var replayResponseIndex = 0;
@@ -960,7 +960,7 @@ function replayJumpTo(stepIndex) {
 
 function setReplaySpeed(speed) {
   replaySpeed = speed;
-  localStorage.setItem('guess_the_verb-replay-speed', String(speed));
+  localStorage.setItem('guess-the-verb-inform7-replay-speed', String(speed));
   document.querySelectorAll('.speed-btn').forEach(function(btn) {
     btn.classList.toggle('active', parseFloat(btn.dataset.speed) === speed);
   });
