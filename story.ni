@@ -42,6 +42,7 @@ Test verbs with "verbs / help / help me".
 Test synonyms with "grab iron key / inspect iron key / proceed east / gaze / peek / rummage overcoat / browse bookshelves / peer / shove painting / yank painting / kindle fireplace / fetch spring / head west / head south / head south / snag trowel / excavate flower bed / nab mechanism / head north / head north / head up / attach mechanism to music box / install spring in music box / crank music box / lift locket".
 Test use with "use iron key / use iron key on door".
 Test errors with "flurble / xyzzy / swim / examine dragon".
+Test naive with "where am i / look around / examine the doormat / look under the mat / pick up the key / unlock the door with the key / open the door / go inside / look around / examine the overcoat / search the pockets / what am i carrying / head east / look around / open the desk / take the small key / examine the painting / move the painting / light the fireplace / examine the hearthstone / open the safe / take the spring / leave / go south / read the recipe card / head south / look around / grab the trowel / dig the flower bed / grab the gears / go back / go north / go upstairs / examine the music box / put the gears in the music box / put the spring in the music box / wind the music box / open the trunk / take the locket / look at the locket / score".
 
 Part 2 - The House
 
@@ -447,10 +448,139 @@ Chapter 9 - Additional Verb Synonyms
 Understand the command "rummage" as "search".
 Understand the command "flip" as "examine".
 Understand the command "browse" as "examine".
+Understand the command "investigate" as "examine".
+Understand the command "slide" as "push".
 Understand "look around" as looking.
 Understand "upstairs" as up.
 Understand "downstairs" as down.
 Understand "help me" as requesting help.
+
+Chapter 10 - Question Forms
+
+[Where am I / what is this place → LOOK]
+Where-asking is an action out of world applying to nothing.
+Understand "where am i" and "where" and "what is this place" and "what is this" as where-asking.
+
+Carry out where-asking:
+	say "You are in [the location of the player]."
+
+[What do I have / what am I carrying → INVENTORY]
+Understand "what do i have" and "what am i carrying" and "what am i holding" and "check my inventory" and "check inventory" and "my inventory" as taking inventory.
+
+[What can I do → HELP]
+Understand "what can i do" and "what can i do here" as requesting help.
+
+Chapter 11 - Navigation Idioms
+
+[Go inside/outside — try going through the door or a reasonable direction]
+Going-inside is an action applying to nothing.
+Understand "go inside" as going-inside.
+
+Carry out going-inside:
+	let found be false;
+	repeat with D running through directions:
+		let the way be the room D from the location of the player;
+		if the way is a room:
+			let the portal be the door D from the location of the player;
+			if the portal is a door and the portal is open:
+				say "(going [D])[command clarification break]";
+				try going D;
+				now found is true;
+				stop;
+	if found is false:
+		say "Use compass directions to move: NORTH, EAST, UP, etc."
+
+Going-outside is an action applying to nothing.
+Understand "go outside" and "go out" as going-outside.
+
+Carry out going-outside:
+	if the location is the Kitchen:
+		say "(going south)[command clarification break]";
+		try going south;
+	otherwise if the location is the Hallway:
+		say "(going west)[command clarification break]";
+		try going west;
+	otherwise:
+		say "Use compass directions to move: NORTH, SOUTH, EAST, etc."
+
+[Go through the door]
+Going-through is an action applying to one thing.
+Understand "go through [something]" and "walk through [something]" as going-through.
+
+Carry out going-through:
+	if the noun is a door:
+		let the way be the direction of the noun from the location of the player;
+		if the way is a direction:
+			say "(going [the way])[command clarification break]";
+			try going the way;
+		otherwise:
+			say "You can[apostrophe]t go through [the noun] from here.";
+	otherwise:
+		say "You can[apostrophe]t walk through [the noun]."
+
+[Leave / leave the room → go back the way you came]
+The previous-room is a room that varies. The previous-room is the Front Porch.
+The has-moved is a truth state that varies. The has-moved is false.
+
+Before going:
+	now the previous-room is the location of the player;
+	now the has-moved is true.
+
+Leaving-room is an action applying to nothing.
+Understand "leave" as leaving-room.
+
+Carry out leaving-room:
+	if the has-moved is false:
+		say "You haven[apostrophe]t been anywhere else yet.";
+	otherwise if the previous-room is the location of the player:
+		say "You[apostrophe]re not sure where to go. Try a compass direction: NORTH, EAST, etc.";
+	otherwise:
+		let the way be the best route from the location of the player to the previous-room, using doors;
+		if the way is a direction:
+			say "(going [the way])[command clarification break]";
+			try going the way;
+		otherwise:
+			say "You can[apostrophe]t find a way back. Try a compass direction."
+
+Instead of exiting when the player is not in a container and the player is not on a supporter:
+	try leaving-room.
+
+[Go back / back / return]
+Going-back is an action applying to nothing.
+Understand "go back" and "back" and "return" and "go back inside" as going-back.
+
+Carry out going-back:
+	try leaving-room.
+
+[Go to <room name> → friendly redirect]
+Understand "go to [text]" and "enter [text]" as a mistake ("Use compass directions to move: GO NORTH, EAST, UP, etc. Type LOOK to see available exits.").
+
+[Head east / walk east — already covered by "walk" as "go" and "head" as "go"]
+
+Chapter 12 - Self-Examination
+
+The description of the player is "As good-looking as ever."
+Understand "myself" as yourself.
+
+Chapter 13 - Room and Ambience Phrases
+
+["Look at everything" / "look at this room" / "examine room" → LOOK]
+Understand "look at everything" and "examine everything" and "look at this room" and "look at this place" and "examine room" and "describe room" and "look at the room" as looking.
+
+["Hello" and other greetings]
+Greeting is an action out of world applying to nothing.
+Understand "hello" and "hi" and "hey" as greeting.
+
+Carry out greeting:
+	say "No one answers. The house is quiet. Type LOOK to see your surroundings, or HELP for hints."
+
+Chapter 14 - Entity Alias Expansions
+
+[Corner of doormat]
+Understand "corner" as the woven doormat.
+
+[Flip through / leaf through / read through → examine]
+Understand "flip through [something]" and "leaf through [something]" and "read through [something]" and "browse through [something]" as examining.
 
 Part 4 - Verb Help System
 
