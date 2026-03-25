@@ -4,7 +4,7 @@
 
 Guess the Verb
 A Parser Puzzle Laboratory by John Googol
-Release 1 / Serial number 260323 / Inform 7 v10.1.2 / D
+Release 1 / Serial number 260325 / Inform 7 v10.1.2 / D
 Your grandmother's letter said she left something for you in this old house.
 
 Type HELP if you get stuck, or VERBS for a list of commands.
