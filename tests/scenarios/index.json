@@ -1,0 +1,7 @@
+{
+  "scenarios": [
+    { "name": "startup", "title": "Front Porch", "category": "Smoke Tests" },
+    { "name": "full-run", "title": "Complete Walkthrough (Assemble Music Box)", "category": "Win Paths", "primary": true },
+    { "name": "verb-help", "title": "Verb Help System", "category": "Verb Help" }
+  ]
+}

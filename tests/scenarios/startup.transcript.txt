@@ -1,0 +1,34 @@
+
+
+
+
+Guess the Verb
+A Parser Puzzle Laboratory by John Googol
+Release 1 / Serial number 260322 / Inform 7 v10.1.2 / D
+Your grandmother's letter said she left something for you in this old house.
+
+Type HELP if you get stuck, or VERBS for a list of commands.
+
+Front Porch
+A sagging wooden porch wraps around the front of the house. A woven doormat lies before the front door. A tarnished brass doorbell is set beside the frame.
+
+The front door leads inside to the east.
+
+You can see a front door here.
+
+
+> look
+Front Porch
+A sagging wooden porch wraps around the front of the house. A woven doormat lies before the front door. A tarnished brass doorbell is set beside the frame.
+
+The front door leads inside to the east.
+
+You can see a front door here.
+
+
+> score
+You have so far scored 0 out of a possible 10, in 2 turns, earning you the rank of Newcomer.
+
+
+> quit
+Are you sure you want to quit? 

@@ -1,0 +1,45 @@
+
+
+
+
+Guess the Verb
+A Parser Puzzle Laboratory by John Googol
+Release 1 / Serial number 260322 / Inform 7 v10.1.2 / D
+Your grandmother's letter said she left something for you in this old house.
+
+Type HELP if you get stuck, or VERBS for a list of commands.
+
+Front Porch
+A sagging wooden porch wraps around the front of the house. A woven doormat lies before the front door. A tarnished brass doorbell is set beside the frame.
+
+The front door leads inside to the east.
+
+You can see a front door here.
+
+
+> verbs
+Movement:  NORTH (N), SOUTH (S), EAST (E), WEST (W), UP (U), DOWN (D), IN, OUT
+Looking:   LOOK (L), EXAMINE (X) thing, SEARCH thing, LOOK IN/UNDER thing
+Taking:    TAKE thing, DROP thing, PUT thing IN/ON thing
+Using:     OPEN, CLOSE, LOCK/UNLOCK thing WITH key, PUSH, PULL, TURN
+Special:   DIG thing, WIND thing, LIGHT thing, RING thing, KNOCK ON thing
+Assembly:  PUT thing IN thing, ATTACH thing TO thing, FIX thing
+Self:      INVENTORY (I), WAIT (Z), WEAR thing, EAT thing
+Meta:      SAVE, RESTORE, UNDO, SCORE, HELP, VERBS, RESTART, QUIT
+
+> help
+You're exploring your grandmother's old house looking for an heirloom she left.
+
+Search everywhere -- under things, behind things, inside things.
+Pick up useful objects and try combining them.
+If something seems broken, look for its missing parts.
+
+Type VERBS for a full list of commands. Most puzzles use VERB NOUN.
+
+
+> score
+You have so far scored 0 out of a possible 10, in 1 turn, earning you the rank of Newcomer.
+
+
+> quit
+Are you sure you want to quit? 

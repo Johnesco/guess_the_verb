@@ -1,0 +1,44 @@
+# Guess the Verb (Inform 7) — RegTest scenarios
+# Parser disambiguation laboratory
+
+** game: ../guess-the-verb-inform7.ulx
+
+* startup
+> look
+{vital}
+
+* full-run
+> look under mat
+> take iron key
+> unlock door with iron key
+> open door
+> east
+> search overcoat
+> east
+> open desk
+> take winding key
+> push painting
+> burn fireplace
+> examine hearthstone
+> open safe
+> take spring
+> west
+> south
+> south
+> take trowel
+> dig flower bed
+> take mechanism
+> north
+> north
+> up
+> put mechanism in music box
+> put spring in music box
+> wind music box
+> take locket
+
+* verb-help
+> verbs
+/Movement
+/Looking
+> help
+/grandmother

@@ -1,0 +1,33 @@
+{
+  "game": "guess_the_verb",
+  "timestamp": "2026-03-25T19:56:58+00:00",
+  "binary_hash": "37034954",
+  "duration_seconds": 0.6,
+  "layers": {
+    "plotex": {
+      "status": "skip",
+      "detail": "not configured"
+    },
+    "regtest": {
+      "status": "fail",
+      "detail": "1 assertion(s) failed",
+      "failures": [
+        "<RegExpCheck:44 \"text adventure\">: not found"
+      ]
+    },
+    "scenarios": {
+      "status": "pass",
+      "total": 3,
+      "passed": 3,
+      "failed": 0,
+      "skipped": 0,
+      "wins": 1,
+      "win_scenarios": [
+        "full-run"
+      ],
+      "duration": 0.2,
+      "primary_walkthrough": "full-run"
+    }
+  },
+  "overall": "fail"
+}
