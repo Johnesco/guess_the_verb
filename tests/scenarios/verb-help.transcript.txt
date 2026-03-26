@@ -39,7 +39,3 @@ Type VERBS for a full list of commands. Most puzzles use VERB NOUN.
 
 > score
 You have so far scored 0 out of a possible 10, in 1 turn, earning you the rank of Newcomer.
-
-
-> quit
-Are you sure you want to quit? 

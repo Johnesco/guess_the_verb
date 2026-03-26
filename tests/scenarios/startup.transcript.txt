@@ -28,7 +28,3 @@ You can see a front door here.
 
 > score
 You have so far scored 0 out of a possible 10, in 2 turns, earning you the rank of Newcomer.
-
-
-> quit
-Are you sure you want to quit? 

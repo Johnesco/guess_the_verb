@@ -1,0 +1,42 @@
+# Guess the Verb (Inform 7) — RegTest scenarios
+# Parser disambiguation laboratory
+
+
+== startup: Front Porch  [smoke tests]
+> look
+
+== full-run: Complete Walkthrough (Assemble Music Box)  [win paths, primary]
+> look under mat
+> take iron key
+> unlock door with iron key
+> open door
+> east
+> search overcoat
+> east
+> open desk
+> take winding key
+> push painting
+> burn fireplace
+> examine hearthstone
+> open safe
+> take spring
+> west
+> south
+> south
+> take trowel
+> dig flower bed
+> take mechanism
+> north
+> north
+> up
+> put mechanism in music box
+> put spring in music box
+> wind music box
+> take locket
+
+== verb-help: Verb Help System  [verb help]
+> verbs
+? /Movement
+? /Looking
+> help
+? /grandmother
